@@ -13,6 +13,7 @@ import java.util.concurrent.Executors;
 public abstract class PizzaAppDatabase extends RoomDatabase{
 
     public abstract DoughRecipeDao doughRecipeDao();
+    public abstract DoughTaskDao doughTaskDao();
 
     public static final int NUMBER_OF_THREADS = 4;
     static final ExecutorService databaseWriteExecutor = Executors.newFixedThreadPool(NUMBER_OF_THREADS);

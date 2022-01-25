@@ -1,0 +1,13 @@
+
+O
+java:S1128"3Remove this unused import 'android.content.Intent'.(³ğ‹G8ÉŸ…‚é/
+P
+java:S1128".Remove this unused import 'android.os.Bundle'.(°şÊóøÿÿÿÿ8ÉŸ…‚é/
+U
+java:S1128"3Remove this unused import 'android.text.TextUtils'.(û˜½Õøÿÿÿÿ8ÉŸ…‚é/
+P
+java:S1128".Remove this unused import 'android.view.View'.(Ø½­äşÿÿÿÿ8ÉŸ…‚é/
+T
+java:S1128"2Remove this unused import 'android.widget.Button'.(²òıÿÿÿÿ8ÉŸ…‚é/
+Q
+java:S1128	"4Remove this unused import 'android.widget.EditText'.(†Å›Ú8ÊŸ…‚é/

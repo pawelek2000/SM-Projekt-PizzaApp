@@ -61,9 +61,9 @@ public class DoughRecipe {
     {
         return NumberOfDoughballs;
     }
-    public void setNumberOfDoughballs(int NumberOfDoughballs)
+    public void setNumberOfDoughballs(int numberOfDoughballs)
     {
-        this.NumberOfDoughballs = NumberOfDoughballs;
+        NumberOfDoughballs = numberOfDoughballs;
     }
     public int getDoughballWeight()
     {
@@ -81,7 +81,6 @@ public class DoughRecipe {
     {
         this.Hydration = Hydration;
     }
-    ///TPBLOK
     public int getTPBLOK()
     {
         return  TPBLOK;
@@ -90,8 +89,6 @@ public class DoughRecipe {
     {
         this.TPBLOK = TPBLOK;
     }
-    //TKBLOK
-
     public int getTKBLOK()
     {
         return TKBLOK;
@@ -100,7 +97,6 @@ public class DoughRecipe {
     {
         this.TKBLOK = TKBLOK;
     }
-    //TPKULKI
     public int getTPKULKI()
     {
         return TPKULKI;
@@ -109,7 +105,6 @@ public class DoughRecipe {
     {
         this.TPKULKI = TPKULKI;
     }
-    //TKKULKI
     public  int getTKKULKI()
     {
         return TKKULKI;
@@ -117,16 +112,13 @@ public class DoughRecipe {
     public void setTKKULKI(int TKKULKI) {
         this.TKKULKI = TKKULKI;
     }
-    //TPKULKI2
     public int getTPKULKI2()
     {
         return TPKULKI2;
     }
-
     public void setTPKULKI2(int TPKULKI2) {
         this.TPKULKI2 = TPKULKI2;
     }
-
     public double getFlour()
     {
         return Flour;
@@ -167,20 +159,16 @@ public class DoughRecipe {
     {
         this.OliveOil = OliveOil;
     }
-
     public void setActiveRecipe(boolean activeRecipe)
     {
         IsActiveRecipe = activeRecipe;
     }
-
     public boolean isActiveRecipe() {
         return IsActiveRecipe;
     }
-
     public void setDescription(String description) {
         Description = description;
     }
-
     public String getDescription() {
         return Description;
     }

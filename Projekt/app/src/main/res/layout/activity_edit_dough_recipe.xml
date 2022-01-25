@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center_horizontal">
+    <TextView
+        android:id="@+id/edit_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Parametry ciasta"
+        android:textSize="20dp" />
+    <TextView
+        android:id="@+id/number_of_doughballs_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="50dp"
+        android:text="Ilość kulek"
+        android:textSize="20dp" />
+
+    <NumberPicker
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:id="@+id/number_of_doughballs"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:id="@+id/doughball_weight_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Waga kulki"
+        android:textSize="20dp" />
+
+    <NumberPicker
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:id="@+id/doughball_weight"
+        android:layout_margin="20dp"/>
+    <TextView
+        android:id="@+id/hydration_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Waga kulki"
+        android:textSize="20dp" />
+
+    <NumberPicker
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:id="@+id/hydration"
+        android:layout_margin="20dp"/>
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:layout_margin="30dp"
+        android:text="Zapisz" />
+
+
+</LinearLayout>
