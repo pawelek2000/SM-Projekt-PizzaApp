@@ -14,7 +14,7 @@ public class DoughTask {
     private String Title;
     private String Description;
     private int TaskTime;
-    private Date TaskEndDate;
+    private String TaskEndDate;
     private boolean Active;
     private boolean LastTask;
     @PrimaryKey(autoGenerate = true)
@@ -64,11 +64,11 @@ public class DoughTask {
         return TaskTime;
     }
 
-    public void setTaskEndDate(Date taskEndDate) {
+    public void setTaskEndDate(String taskEndDate) {
         TaskEndDate = taskEndDate;
     }
 
-    public Date getTaskEndDate() {
+    public String getTaskEndDate() {
         return TaskEndDate;
     }
 

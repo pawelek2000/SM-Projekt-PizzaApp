@@ -1,20 +1,0 @@
-
-e	java:S116"PRename this field "Title" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ã¨„æ
-p	java:S116"VRename this field "Description" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(º¼Â­ùÿÿÿÿ
-h	java:S116"SRename this field "TaskTime" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷€¾Ğ
-k	java:S116"VRename this field "TaskEndDate" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ı¨Ö¼
-f	java:S116"QRename this field "Active" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…Ñ›
-h	java:S116"SRename this field "LastTask" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªÓúÂ
-m	java:S116"XRename this field "DoughRecipeId" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦‡£Â
-d
-java:S1128"IRemove this unused import 'android.renderscript.ScriptIntrinsicYuvToRGB'.(ë“†Šùÿÿÿÿ
-@
-java:S1128	"Remove this duplicated import.(±ı˜£şÿÿÿÿ8±ªÿè/
-@
-java:S1128
-"Remove this duplicated import.(¨¿áçüÿÿÿÿ8±ªÿè/
-f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿ¸™×
-f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿ¸™×
-f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿ¸™×
-f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿ¸™×
-f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿ¸™×

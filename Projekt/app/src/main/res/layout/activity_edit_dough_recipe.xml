@@ -19,7 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:layout_marginTop="50dp"
-        android:text="Ilość kulek"
+        android:text="@string/number_of_doughballs"
         android:textSize="20dp" />
 
     <NumberPicker
@@ -33,7 +33,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:text="Waga kulki"
+        android:text="@string/doughball_weight"
         android:textSize="20dp" />
 
     <NumberPicker
@@ -46,7 +46,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:text="Waga kulki"
+        android:text="@string/hydration"
         android:textSize="20dp" />
 
     <NumberPicker
@@ -60,7 +60,7 @@
         android:layout_width="120dp"
         android:layout_height="80dp"
         android:layout_margin="30dp"
-        android:text="Zapisz" />
+        android:text="@string/add_dough_button" />
 
 
 </LinearLayout>

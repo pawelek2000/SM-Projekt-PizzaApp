@@ -8,7 +8,7 @@ public class DoughRecipe {
     private int NumberOfDoughballs;
     private int DoughballWeight;
     private int Hydration;
-    private boolean IsActiveRecipe;
+    private boolean ActiveRecipe;
     private int TPBLOK;
     private int TKBLOK;
     private int TPKULKI;
@@ -32,7 +32,7 @@ public class DoughRecipe {
         this.NumberOfDoughballs = NumberOfDoughballs;
         this.DoughballWeight = DoughballWeight;
         this.Hydration = Hydration;
-        this.IsActiveRecipe = true;
+        this.ActiveRecipe = true;
         this.Description = null;
 
         this.TPBLOK = TPBLOK;
@@ -161,10 +161,10 @@ public class DoughRecipe {
     }
     public void setActiveRecipe(boolean activeRecipe)
     {
-        IsActiveRecipe = activeRecipe;
+        ActiveRecipe = activeRecipe;
     }
     public boolean isActiveRecipe() {
-        return IsActiveRecipe;
+        return ActiveRecipe;
     }
     public void setDescription(String description) {
         Description = description;

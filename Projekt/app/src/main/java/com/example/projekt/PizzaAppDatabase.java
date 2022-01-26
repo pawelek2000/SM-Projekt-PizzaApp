@@ -9,7 +9,7 @@ import androidx.room.RoomDatabase;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-@Database(entities = {DoughRecipe.class}, version = 1, exportSchema = false)
+@Database(entities = {DoughRecipe.class, DoughTask.class}, version = 1, exportSchema = false)
 public abstract class PizzaAppDatabase extends RoomDatabase{
 
     public abstract DoughRecipeDao doughRecipeDao();

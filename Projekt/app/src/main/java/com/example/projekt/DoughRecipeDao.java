@@ -9,6 +9,7 @@ import androidx.room.Query;
 import androidx.room.Update;
 
 import java.util.List;
+@Dao
 public interface DoughRecipeDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
@@ -23,7 +24,6 @@ public interface DoughRecipeDao {
     @Query("SELECT * FROM DoughRecipe")
     LiveData<List<DoughRecipe>> getDoughRecipes();
 
-    @Query("SELECT * FROM DoughRecipe WHERE IsActiveRecipe = 1")
+    @Query("SELECT * FROM DoughRecipe WHERE ActiveRecipe = 1")
     List<DoughRecipe> getActiveDoughRecipe();
-
 }
