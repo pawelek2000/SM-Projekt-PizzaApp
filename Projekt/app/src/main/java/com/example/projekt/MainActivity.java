@@ -1,15 +1,20 @@
 package com.example.projekt;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.ViewModelProvider;
+import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.NumberPicker;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -18,6 +23,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     private static final String CURRENT_VIEW ="CURRENT_VIEW_ID";
+    public static final int NEW_DOUGH_RECIPE_ACTIVITY_REQUEST_CODE = 0;
     private int currentViewID = 0;
 
     private RecyclerView currentView;
@@ -37,10 +43,90 @@ public class MainActivity extends AppCompatActivity {
         currentView = findViewById(R.id.recycler_view);
         currentView.setLayoutManager(new LinearLayoutManager(this));
         floatingActionButton = findViewById(R.id.floating_button);
-        floatingActionButton.setVisibility(View.INVISIBLE);
+
+        doughRecipeViewModel = ViewModelProviders.of(this).get(DoughRecipeViewModel.class);
+        doughTaskViewModel = ViewModelProviders.of(this).get(DoughTaskViewModel.class);
+
+        doughRecipeViewModel.getDoughRecipes().observe(this, recipes -> doughRecipeAdapter.setRecipies(recipes));
+
+        List<DoughRecipe> currentRecipe = doughRecipeViewModel.getActiveDoughRecipe();
+        if(!currentRecipe.isEmpty())
+        {
+            doughTaskViewModel.getDoughTasksByRecipeId(currentRecipe.get(0).getId()).observe(this, tasks -> doughTaskAdapter.setTasks(tasks));
+            floatingActionButton.setVisibility(View.INVISIBLE);
+        }
+        else
+        {
+            doughTaskViewModel.getDoughTasksByRecipeId(-1).observe(this, tasks -> doughTaskAdapter.setTasks(tasks));
+            floatingActionButton.setVisibility(View.VISIBLE);
+        }
 
 
+        Button tasksViewButton = findViewById(R.id.task_view_button);
+        tasksViewButton.setOnClickListener(v->
+        {
+            currentView.setAdapter(doughTaskAdapter);
+            currentViewID = 0;
+            if(!currentRecipe.isEmpty())
+            {
+                floatingActionButton.setVisibility(View.INVISIBLE);
+            }
+            else
+            {
+                floatingActionButton.setVisibility(View.VISIBLE);
+            }
+            floatingActionButton.setOnClickListener(view ->
+            {
+                Intent intent = new Intent(MainActivity.this, EditDoughRecipeActivity.class);
+                startActivityForResult(intent,NEW_DOUGH_RECIPE_ACTIVITY_REQUEST_CODE);
+            });
+        });
 
+        Button historyViewButton = findViewById(R.id.history_view_button);
+        historyViewButton.setOnClickListener(v->
+        {
+            currentView.setAdapter(doughRecipeAdapter);
+            currentViewID = 1;
+
+            floatingActionButton.setVisibility(View.INVISIBLE);
+
+        });
+
+        if(savedInstanceState != null)
+        {
+            currentViewID = savedInstanceState.getInt(CURRENT_VIEW);
+        }
+        switch(currentViewID) {
+            case 0: {
+                tasksViewButton.performClick();
+                break;
+            }
+            case 1: {
+                historyViewButton.performClick();
+                break;
+            }
+        }
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data)
+    {
+        super.onActivityResult(requestCode, resultCode, data);
+        if(resultCode == RESULT_OK)
+        {
+            if(requestCode == NEW_DOUGH_RECIPE_ACTIVITY_REQUEST_CODE)
+            {
+
+            }
+
+        }
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState)
+    {
+        super.onSaveInstanceState(outState);
+        outState.putInt(CURRENT_VIEW, currentViewID);
     }
     private class DoughRecipeHolder extends RecyclerView.ViewHolder implements View.OnClickListener
     {
@@ -103,7 +189,7 @@ public class MainActivity extends AppCompatActivity {
             return 0;
         }
 
-        void setBooks(List<DoughRecipe> recipes) {
+        void setRecipies(List<DoughRecipe> recipes) {
             this.recipes = recipes;
             notifyDataSetChanged();
         }
@@ -165,7 +251,7 @@ public class MainActivity extends AppCompatActivity {
             return 0;
         }
 
-        void setBooks(List<DoughTask> tasks) {
+        void setTasks(List<DoughTask> tasks) {
             this.tasks = tasks;
             notifyDataSetChanged();
         }

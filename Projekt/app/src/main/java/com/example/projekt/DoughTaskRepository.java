@@ -2,6 +2,8 @@ package com.example.projekt;
 
 import android.app.Application;
 
+import androidx.lifecycle.LiveData;
+
 import java.util.List;
 
 public class DoughTaskRepository {
@@ -33,7 +35,7 @@ public class DoughTaskRepository {
         });
     }
 
-    List<DoughTask> getDoughTasksByRecipeId(int Id)
+    LiveData<List<DoughTask>> getDoughTasksByRecipeId(int Id)
     {
         return doughTaskDao.getDoughTasksByRecipeId(Id);
     }

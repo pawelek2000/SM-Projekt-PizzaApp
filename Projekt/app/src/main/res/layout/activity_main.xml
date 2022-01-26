@@ -23,22 +23,25 @@
             android:gravity="center_horizontal">
 
             <Button
-                android:id="@+id/current_dough_view_button"
+                android:id="@+id/task_view_button"
                 android:layout_width="80dp"
                 android:layout_height="50dp"
-                android:layout_marginLeft="20dp" />
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="@color/purple_700"/>
 
             <Button
-                android:id="@+id/dough_history_view_button"
+                android:id="@+id/history_view_button"
                 android:layout_width="80dp"
                 android:layout_height="50dp"
-                android:layout_marginLeft="20dp" />
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="@color/design_default_color_error"/>
 
             <Button
                 android:id="@+id/tutorials_view_button"
                 android:layout_width="80dp"
                 android:layout_height="50dp"
-                android:layout_marginLeft="20dp"/>
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="@color/purple_200"/>
 
         </LinearLayout>
 

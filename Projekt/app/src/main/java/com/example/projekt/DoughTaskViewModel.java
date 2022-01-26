@@ -4,6 +4,7 @@ import android.app.Application;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
+import androidx.lifecycle.LiveData;
 
 import java.util.List;
 
@@ -27,7 +28,7 @@ public class DoughTaskViewModel extends AndroidViewModel {
     {
         doughTaskRepository.delete(doughTask);
     }
-    public List<DoughTask> getDoughTasksByRecipeId(int Id)
+    public LiveData<List<DoughTask>> getDoughTasksByRecipeId(int Id)
     {
         return  doughTaskRepository.getDoughTasksByRecipeId(Id);
     }

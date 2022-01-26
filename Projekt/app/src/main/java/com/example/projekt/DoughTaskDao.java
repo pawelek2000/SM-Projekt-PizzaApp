@@ -1,4 +1,5 @@
 package com.example.projekt;
+import androidx.lifecycle.LiveData;
 import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
@@ -20,5 +21,5 @@ public interface DoughTaskDao {
     void delete(DoughTask doughTask);
 
     @Query("SELECT * FROM DoughTask WHERE DoughRecipeId = :Id")
-    List<DoughTask> getDoughTasksByRecipeId(int Id);
+    LiveData<List<DoughTask>> getDoughTasksByRecipeId(int Id);
 }
