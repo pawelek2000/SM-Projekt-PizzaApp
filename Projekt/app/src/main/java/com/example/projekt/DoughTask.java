@@ -19,10 +19,11 @@ public class DoughTask {
     private boolean LastTask;
     @PrimaryKey(autoGenerate = true)
     private int id;
+    private int taskNumer;
 
     private int DoughRecipeId;
 
-    public DoughTask(String Title, String Description, int TaskTime, int DoughRecipeId,boolean LastTask)
+    public DoughTask(String Title, String Description, int TaskTime, int DoughRecipeId,boolean LastTask, int taskNumer)
     {
         this.Title = Title;
         this.Description = Description;
@@ -30,6 +31,7 @@ public class DoughTask {
         this.DoughRecipeId = DoughRecipeId;
         this.Active = true;
         this.LastTask = LastTask;
+        this.taskNumer = taskNumer;
     }
 
     public void setId(int id) {
@@ -94,5 +96,13 @@ public class DoughTask {
 
     public boolean isLastTask() {
         return LastTask;
+    }
+
+    public void setTaskNumer(int taskNumer) {
+        this.taskNumer = taskNumer;
+    }
+
+    public int getTaskNumer() {
+        return taskNumer;
     }
 }

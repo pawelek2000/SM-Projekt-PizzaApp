@@ -35,8 +35,8 @@ public class DoughTaskRepository {
         });
     }
 
-    LiveData<List<DoughTask>> getDoughTasksByRecipeId(int Id)
+    LiveData<List<DoughTask>> getDoughTasksByRecipeId()
     {
-        return doughTaskDao.getDoughTasksByRecipeId(Id);
+        return doughTaskDao.getDoughTasksByRecipeId();
     }
 }

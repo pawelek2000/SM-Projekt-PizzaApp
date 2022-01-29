@@ -5,4 +5,22 @@
     <string name="doughball_weight">Waga kulki</string>
     <string name="hydration">Hydracja</string>
     <string name="add_dough_button">Dodaj</string>
+
+    <string name="add_recipe_failure">Czas dodatkowje fermentacji musi być odpowiedni albo ustawiony na 0.</string>
+    <string name="mixing_ingredients">Łaczenie składników</string>
+    <string name="dough_kneading">Składnaie ciasta</string>
+
+    <string name="flour">Mąka: </string>
+    <string name="water">Woda: </string>
+    <string name="salt">Sól: </string>
+    <string name="yeast">Drożdże: </string>
+    <string name="oil">Oliwa: </string>
+
+    <string name="block_RT_fermentation">Fermentacja TP Blok</string>
+    <string name="block_CT_fermentation">Fermentacja TK Blok</string>
+    <string name="ball_RT_fermentation">Fermentacja TP Kulka</string>
+
+    <string name="ball_CT_fermentation">Fermentacja TK Kulka</string>
+    <string name="ball_RT_fermentation2">Fermentacja TP2 Kulka</string>
+    <string name="endTask">Zakończ</string>
 </resources>

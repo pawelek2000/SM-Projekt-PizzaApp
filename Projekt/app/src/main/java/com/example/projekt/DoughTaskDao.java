@@ -20,6 +20,6 @@ public interface DoughTaskDao {
     @Delete
     void delete(DoughTask doughTask);
 
-    @Query("SELECT * FROM DoughTask WHERE DoughRecipeId = :Id")
-    LiveData<List<DoughTask>> getDoughTasksByRecipeId(int Id);
+    @Query("SELECT * FROM DoughTask")
+    LiveData<List<DoughTask>> getDoughTasksByRecipeId();
 }
