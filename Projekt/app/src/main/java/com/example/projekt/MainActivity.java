@@ -22,6 +22,7 @@ import android.widget.NumberPicker;
 import android.widget.TextView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.youtube.player.YouTubeBaseActivity;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -31,6 +32,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
     private static final String CURRENT_VIEW ="CURRENT_VIEW_ID";
     public static final int NEW_DOUGH_RECIPE_ACTIVITY_REQUEST_CODE = 0;
+    public static final int YOUTUBE_REQUEST_CODE = 1;
     private int currentViewID = 0;
 
     private RecyclerView currentView;
@@ -125,6 +127,13 @@ public class MainActivity extends AppCompatActivity {
 
             floatingActionButton.setVisibility(View.INVISIBLE);
 
+        });
+
+        Button tutorialsViewButton = findViewById(R.id.tutorials_view_button);
+        tutorialsViewButton.setOnClickListener(view ->
+        {
+            Intent intent = new Intent(MainActivity.this, YouTubeTutorialsActivity.class);
+            startActivityForResult(intent,YOUTUBE_REQUEST_CODE);
         });
 
         if(savedInstanceState != null)
@@ -274,6 +283,9 @@ public class MainActivity extends AppCompatActivity {
                 floatingActionButton.setVisibility(View.INVISIBLE);
                 finish();
                 startActivity(getIntent());
+            }
+            if(requestCode==YOUTUBE_REQUEST_CODE)
+            {
             }
 
 

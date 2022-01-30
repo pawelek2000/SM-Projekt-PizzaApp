@@ -24,4 +24,6 @@
     <string name="ball_RT_fermentation2">Fermentacja TP2 Kulka</string>
     <string name="endTask">Zakończ</string>
     <string name="backButton">Cofnij</string>
+    <string name="play_button">Play</string>
+
 </resources>
