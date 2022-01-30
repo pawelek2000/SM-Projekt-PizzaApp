@@ -23,4 +23,5 @@
     <string name="ball_CT_fermentation">Fermentacja TK Kulka</string>
     <string name="ball_RT_fermentation2">Fermentacja TP2 Kulka</string>
     <string name="endTask">Zakończ</string>
+    <string name="backButton">Cofnij</string>
 </resources>

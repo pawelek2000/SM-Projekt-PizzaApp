@@ -24,6 +24,8 @@ import android.widget.TextView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
@@ -62,30 +64,29 @@ public class MainActivity extends AppCompatActivity {
         doughRecipeViewModel.getDoughRecipes().observe(this, new Observer<List<DoughRecipe>>() {
             @Override
             public void onChanged(@Nullable final List<DoughRecipe> recipes) {
-                doughRecipeAdapter.serRecipes(recipes);
+                List<DoughRecipe> temp;
+                temp = new ArrayList<>();
+                for (int i = 0; i < recipes.size();i++)
+                    if(recipes.get(i).isActiveRecipe() == false)
+                        temp.add(recipes.get(i));
+                doughRecipeAdapter.serRecipes(temp);
             }
         });
         List<DoughRecipe> currentRecipes = doughRecipeViewModel.getActiveDoughRecipe();
         if(!currentRecipes.isEmpty())
         {
-            doughTaskViewModel.getDoughTasksByRecipeId().observe(this, new Observer<List<DoughTask>>() {
+            doughTaskViewModel.getDoughTasksByRecipeId(currentRecipes.get(0).getId()).observe(this, new Observer<List<DoughTask>>() {
                         @Override
                         public void onChanged(List<DoughTask> tasks) {
 
-
-                            List<DoughTask> temp;
-                            temp = new ArrayList<>();
-                            for (int i = 0; i < tasks.size();i++)
-                                if(tasks.get(i).getDoughRecipeId()== currentRecipes.get(0).getId())
-                                    temp.add(tasks.get(i));
-                            doughTaskAdapter.setTasks(temp);
+                            doughTaskAdapter.setTasks(tasks);
                         }
                     });
                     floatingActionButton.setVisibility(View.INVISIBLE);
         }
         else
         {
-            doughTaskViewModel.getDoughTasksByRecipeId().observe(this, new Observer<List<DoughTask>>() {
+            doughTaskViewModel.getDoughTasksByRecipeId(-1).observe(this, new Observer<List<DoughTask>>() {
                         @Override
                         public void onChanged(List<DoughTask> tasks) {
                             doughTaskAdapter.setTasks(tasks);
@@ -102,11 +103,11 @@ public class MainActivity extends AppCompatActivity {
             currentViewID = 0;
             if(!currentRecipes.isEmpty())
             {
-               // floatingActionButton.setVisibility(View.INVISIBLE);
+                floatingActionButton.setVisibility(View.INVISIBLE);
             }
             else
             {
-              //  floatingActionButton.setVisibility(View.VISIBLE);
+                floatingActionButton.setVisibility(View.VISIBLE);
             }
             floatingActionButton.setOnClickListener(view ->
             {
@@ -179,6 +180,7 @@ public class MainActivity extends AppCompatActivity {
                                 false,
                                 taskNumber
                         );
+
                 taskNumber++;
                 doughTask1.setActive(true);
                 doughTask1.setTaskEndDate(" ");
@@ -270,6 +272,8 @@ public class MainActivity extends AppCompatActivity {
                 );
                 doughTaskViewModel.insert(endDoughTask);
                 floatingActionButton.setVisibility(View.INVISIBLE);
+                finish();
+                startActivity(getIntent());
             }
 
 
@@ -282,17 +286,19 @@ public class MainActivity extends AppCompatActivity {
         super.onSaveInstanceState(outState);
         outState.putInt(CURRENT_VIEW, currentViewID);
     }
-    private class DoughRecipeHolder extends RecyclerView.ViewHolder implements View.OnClickListener, View.OnLongClickListener
+    private class DoughRecipeHolder extends RecyclerView.ViewHolder implements View.OnClickListener
     {
         private DoughRecipe doughRecipe;
-        private TextView bookTitleTextView;
+        private TextView titleTextView;
+        private TextView endTimeTextView;
 
 
         public DoughRecipeHolder(LayoutInflater inflater, ViewGroup parent)
         {
             super(inflater.inflate(R.layout.dough_recipe_list_item,parent,false));
 
-            bookTitleTextView = itemView.findViewById(R.id.hydration);
+            titleTextView = itemView.findViewById(R.id.hydration);
+            endTimeTextView = itemView.findViewById(R.id.end_date);
 
             itemView.setOnClickListener(this);
         }
@@ -300,19 +306,14 @@ public class MainActivity extends AppCompatActivity {
         public void bind(DoughRecipe doughRecipe)
         {
             this.doughRecipe = doughRecipe;
-            bookTitleTextView.setText(""+doughRecipe.getHydration());
-
+            titleTextView.setText(""+doughRecipe.getHydration());
+            endTimeTextView.setText(""+doughRecipe.getEndDate());
         }
 
         @Override
         public void onClick(View v)
         {
 
-        }
-        @Override
-        public boolean onLongClick(View v)
-        {
-            return true;
         }
 
     }
@@ -347,22 +348,24 @@ public class MainActivity extends AppCompatActivity {
     {
 
         private DoughTask doughTask;
-        private TextView bookTitleTextView;
+        private TextView titleTextView;
+        private TextView endTimeTextView;
 
         public DoughTaskHolder(LayoutInflater inflater, ViewGroup parent)
         {
             super(inflater.inflate(R.layout.dough_task_list_item, parent, false));
             itemView.setOnClickListener(this);
             itemView.setOnLongClickListener(this);
-            bookTitleTextView = itemView.findViewById(R.id.task_title);
-
+            titleTextView = itemView.findViewById(R.id.task_title);
+            endTimeTextView = itemView.findViewById(R.id.end_time);
 
         }
 
         public void bind(DoughTask doughTask)
         {
             this.doughTask = doughTask;
-            bookTitleTextView.setText(doughTask.getTitle());
+            titleTextView.setText(doughTask.getTitle());
+            endTimeTextView.setText(doughTask.getTaskEndDate());
         }
 
         @Override
@@ -373,7 +376,59 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public boolean onLongClick(View v)
         {
-            return true;
+            if (doughTask.isLastTask() && !doughTask.isActive())
+            {
+                List<DoughTask> tempTasks = doughTaskViewModel.getDoughTasksByRecipeIdButNormalListNotThisWeirdLiveData(doughTask.getDoughRecipeId());
+
+                for (int i = 0; i < tempTasks.size(); i++)
+                {
+                    doughTaskViewModel.delete(tempTasks.get(i));
+                }
+                DoughRecipe tempRecipe = doughRecipeViewModel.getActiveDoughRecipe().get(0);
+                doughRecipeViewModel.delete(tempRecipe);
+                finish();
+                startActivity(getIntent());
+                return true;
+            }
+            else if (doughTask.isLastTask() && doughTask.isActive())
+            {
+                List<DoughTask> tempTasks = doughTaskViewModel.getDoughTasksByRecipeIdButNormalListNotThisWeirdLiveData(doughTask.getDoughRecipeId());
+
+                for (int i = 0; i < tempTasks.size(); i++)
+                {
+                    doughTaskViewModel.delete(tempTasks.get(i));
+                }
+                DoughRecipe tempRecipe = doughRecipeViewModel.getActiveDoughRecipe().get(0);
+                tempRecipe.setActiveRecipe(false);
+                Calendar currentTimeNow = Calendar.getInstance();
+                Date currentDate = currentTimeNow.getTime();
+                tempRecipe.setEndDate(""+currentDate);
+                doughRecipeViewModel.update(tempRecipe);
+                finish();
+                startActivity(getIntent());
+                return true;
+            }
+            else if(doughTask.isActive())
+            {
+                DoughTask tempTask;
+
+                List<DoughTask> tempTasks = doughTaskViewModel.getDoughTasksByRecipeIdAndUmber(doughTask.getDoughRecipeId(),doughTask.getTaskNumer() + 1);
+
+                tempTask = tempTasks.get(0);
+                tempTask.setActive(true);
+                Calendar currentTimeNow = Calendar.getInstance();
+                currentTimeNow.add(Calendar.MINUTE, tempTask.getTaskTime());
+                Date taskTimeMinsFromNow = currentTimeNow.getTime();
+                tempTask.setTaskEndDate(""+taskTimeMinsFromNow);
+                doughTask.setActive(false);
+                doughTaskViewModel.update(tempTask);
+                doughTaskViewModel.delete(doughTask);
+
+                return true;
+
+            }
+            else
+                return true;
         }
     }
 

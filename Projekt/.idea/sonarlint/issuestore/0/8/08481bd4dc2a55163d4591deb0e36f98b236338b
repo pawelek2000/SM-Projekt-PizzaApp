@@ -1,36 +1,34 @@
 
 u
-java:S1450""ZRemove the "currentView" field and declare it as a local variable in the relevant methods.(Áú‘¶úÿÿÿÿ
-v
-java:S3923g"[Remove this conditional structure or edit its code blocks so that they're not all the same.(Ã³»İÿÿÿÿÿ
-Q	java:S125i"<This block of commented-out lines of code should be removed.(ú±ÕŒ
-V	java:S125m"<This block of commented-out lines of code should be removed.(İì ışÿÿÿÿ
+java:S1450$"ZRemove the "currentView" field and declare it as a local variable in the relevant methods.(Áú‘¶úÿÿÿÿ
+=
+java:S1125F"'Remove the unnecessary boolean literal.(®Ü–à
 T
-java:S1874r">Remove this use of "startActivityForResult"; it is deprecated.(Â§˜Ÿ
-=	java:S131…""Add a default case to this switch.(ë…¶úÿÿÿÿ
+java:S1874s">Remove this use of "startActivityForResult"; it is deprecated.(Â§˜Ÿ
+=	java:S131†""Add a default case to this switch.(ë…¶úÿÿÿÿ
 a
-java:S1874“"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(ñåéà
+java:S1874”"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(ñåéà
 ˜
-java:S1186´"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(şÂÓ¹
+java:S1186º"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(şÂÓ¹
 q
-java:S1450Ÿ"ZRemove the "doughRecipe" field and declare it as a local variable in the relevant methods.(•äè´
+java:S1450£"ZRemove the "doughRecipe" field and declare it as a local variable in the relevant methods.(•äè´
 ˜
-java:S1186ñ"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(şÂÓ¹
-o
-java:S1450İ"XRemove the "doughTask" field and declare it as a local variable in the relevant methods.(¿¥Á
+java:S1186ô"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(şÂÓ¹
 F
-java:S1068Ÿ"/Remove this unused "doughRecipe" private field.(•äè´
-D
-java:S1068İ"-Remove this unused "doughTask" private field.(¿¥Á
+java:S1068£"/Remove this unused "doughRecipe" private field.(•äè´
 K
-java:S1066˜"/Merge this if statement with the enclosing one.(Âı‡Çşÿÿÿÿ
+java:S1066™"/Merge this if statement with the enclosing one.(Âı‡Çşÿÿÿÿ
 >
-java:S1604>"(Make this anonymous inner class a lambda(½Íô
+java:S1604@"(Make this anonymous inner class a lambda(½Íô
 C
-java:S1604G"(Make this anonymous inner class a lambda(…Ş»Èÿÿÿÿÿ
+java:S1604N"(Make this anonymous inner class a lambda(»½æ’üÿÿÿÿ
 C
-java:S1604X"(Make this anonymous inner class a lambda(…Ş»Èÿÿÿÿÿ
+java:S1604Y"(Make this anonymous inner class a lambda(¼£ûúÿÿÿÿ
 g
-java:S1301…"KReplace this "switch" statement by "if" statements to increase readability.(ë…¶úÿÿÿÿ
+java:S1301†"KReplace this "switch" statement by "if" statements to increase readability.(ë…¶úÿÿÿÿ
 Y
-java:S2259œ"BA "NullPointerException" could be thrown; "data" is nullable here.(º©Ù
+java:S2259"BA "NullPointerException" could be thrown; "data" is nullable here.(º©Ù
+`
+java:S2259E"EA "NullPointerException" could be thrown; "recipes" is nullable here.(³üè­ÿÿÿÿÿ
+U
+java:S3516ù"9Refactor this method to not always return the same value.(• ½ıÿÿÿÿ

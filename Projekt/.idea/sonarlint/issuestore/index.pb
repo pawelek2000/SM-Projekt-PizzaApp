@@ -1,20 +1,8 @@
 
 k
 ;app/src/main/java/com/example/projekt/PizzaAppDatabase.java,4\a\4a0b21ccbcee06ebf04bed98a4454c0044f37007
-d
-4app/src/main/java/com/example/projekt/DoughTask.java,4\b\4bbec3614d483ea3ea46f82b1e055bf4557ec2a9
-r
-Bapp/src/main/java/com/example/projekt/EditDoughRecipeActivity.java,0\a\0a19a075b6b31b599489206284361abfabfec2ee
-f
-6app/src/main/java/com/example/projekt/DoughRecipe.java,0\7\073e658369e20d320627dbff00c49bcc645e77dd
 p
 @app/src/main/java/com/example/projekt/DoughRecipeRepository.java,a\0\a01dfbe8297ac249dbbe662a5af4d0549604eccd
-g
-7app/src/main/java/com/example/projekt/DoughTaskDao.java,0\d\0d623b6accff9417af53678161c450ba479f0c9b
-n
->app/src/main/java/com/example/projekt/DoughTaskRepository.java,b\b\bb1bf399497578ba9fd559a539d56d76d6c29673
-m
-=app/src/main/java/com/example/projekt/DoughTaskViewModel.java,e\e\ee5581602c319bad554ff43c44a6e07cc3bb003f
 @
 app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
 P
@@ -23,7 +11,19 @@ P
 build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
 o
 ?app/src/main/java/com/example/projekt/DoughRecipeViewModel.java,6\4\6461d0e3e0c3869c3fa4a906653da9bea708a0c9
-i
-9app/src/main/java/com/example/projekt/DoughRecipeDao.java,2\e\2e437813215011cdc89928ea804e2852633b4032
+n
+>app/src/main/java/com/example/projekt/DoughTaskRepository.java,b\b\bb1bf399497578ba9fd559a539d56d76d6c29673
+m
+=app/src/main/java/com/example/projekt/DoughTaskViewModel.java,e\e\ee5581602c319bad554ff43c44a6e07cc3bb003f
+g
+7app/src/main/java/com/example/projekt/DoughTaskDao.java,0\d\0d623b6accff9417af53678161c450ba479f0c9b
+d
+4app/src/main/java/com/example/projekt/DoughTask.java,4\b\4bbec3614d483ea3ea46f82b1e055bf4557ec2a9
 g
 7app/src/main/java/com/example/projekt/MainActivity.java,0\8\08481bd4dc2a55163d4591deb0e36f98b236338b
+f
+6app/src/main/java/com/example/projekt/DoughRecipe.java,0\7\073e658369e20d320627dbff00c49bcc645e77dd
+i
+9app/src/main/java/com/example/projekt/DoughRecipeDao.java,2\e\2e437813215011cdc89928ea804e2852633b4032
+r
+Bapp/src/main/java/com/example/projekt/EditDoughRecipeActivity.java,0\a\0a19a075b6b31b599489206284361abfabfec2ee

@@ -23,6 +23,7 @@ public class DoughRecipe {
     private double OliveOil;
 
     private String Description;
+    private String EndDate;
 
     @PrimaryKey(autoGenerate = true)
     private int id;
@@ -40,6 +41,7 @@ public class DoughRecipe {
         this.TPKULKI = TPKULKI;
         this.TKKULKI = TKKULKI;
         this.TPKULKI2 = TPKULKI2;
+        this.EndDate = "";
 
         double OneDoughballFlourAmount = 0.966 * DoughballWeight * 10 /(10+Hydration/10);
         this.Flour = OneDoughballFlourAmount * NumberOfDoughballs;
@@ -47,6 +49,7 @@ public class DoughRecipe {
         this.Yeast = 0.0015 * OneDoughballFlourAmount * NumberOfDoughballs;
         this.Salt = 0.0312 * OneDoughballFlourAmount * NumberOfDoughballs;
         this.OliveOil = 0.025 * OneDoughballFlourAmount * NumberOfDoughballs;
+
     }
 
     public int getId()
@@ -171,5 +174,13 @@ public class DoughRecipe {
     }
     public String getDescription() {
         return Description;
+    }
+
+    public String getEndDate() {
+        return EndDate;
+    }
+
+    public void setEndDate(String endDate) {
+        EndDate = endDate;
     }
 }

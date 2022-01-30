@@ -28,8 +28,16 @@ public class DoughTaskViewModel extends AndroidViewModel {
     {
         doughTaskRepository.delete(doughTask);
     }
-    public LiveData<List<DoughTask>> getDoughTasksByRecipeId()
+    public LiveData<List<DoughTask>> getDoughTasksByRecipeId(int Id)
     {
-        return  doughTaskRepository.getDoughTasksByRecipeId();
+        return  doughTaskRepository.getDoughTasksByRecipeId(Id);
+    }
+    List<DoughTask> getDoughTasksByRecipeIdButNormalListNotThisWeirdLiveData(int Id)
+    {
+        return doughTaskRepository.getDoughTasksByRecipeIdButNormalListNotThisWeirdLiveData(Id);
+    }
+    List<DoughTask> getDoughTasksByRecipeIdAndUmber(int Id,int number)
+    {
+        return  doughTaskRepository.getDoughTasksByRecipeIdAndUmber(Id,number);
     }
 }

@@ -5,3 +5,6 @@ G
 java:S1602",Remove useless curly braces around statement(‚Ž¨œÿÿÿÿÿ
 G
 java:S1602!",Remove useless curly braces around statement(‚Ž¨œÿÿÿÿÿ
+f	java:S117&"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(øæšÌ
+f	java:S117+"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Õß“æ
+k	java:S1170"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼ÌÈ­ÿÿÿÿÿ

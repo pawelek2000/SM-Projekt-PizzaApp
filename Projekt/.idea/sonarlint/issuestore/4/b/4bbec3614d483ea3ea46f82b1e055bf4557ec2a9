@@ -1,22 +1,24 @@
 
-e	java:S116"PRename this field "Title" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ã¨„æ
-p	java:S116"VRename this field "Description" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(º¼Â­ùÿÿÿÿ
-h	java:S116"SRename this field "TaskTime" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷€¾Ğ
-p	java:S116"VRename this field "TaskEndDate" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•¸¨ßıÿÿÿÿ
-f	java:S116"QRename this field "Active" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…Ñ›
-h	java:S116"SRename this field "LastTask" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªÓúÂ
-m	java:S116"XRename this field "DoughRecipeId" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦‡£Â
+e	java:S116"PRename this field "Title" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ã¨„æ
+p	java:S116"VRename this field "Description" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(º¼Â­ùÿÿÿÿ
+h	java:S116"SRename this field "TaskTime" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷€¾Ğ
+p	java:S116"VRename this field "TaskEndDate" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•¸¨ßıÿÿÿÿ
+f	java:S116"QRename this field "Active" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…Ñ›
+h	java:S116"SRename this field "LastTask" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªÓúÂ
+m	java:S116"XRename this field "DoughRecipeId" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦‡£Â
 d
 java:S1128"IRemove this unused import 'android.renderscript.ScriptIntrinsicYuvToRGB'.(ë“†Šùÿÿÿÿ
+G
+java:S1128"1Remove this unused import 'java.util.Comparator'.(î¹ó¹
 A
-java:S1128"+Remove this unused import 'java.util.Date'.(¸…¼ü
-9
-java:S1128	"Remove this duplicated import.(±ı˜£şÿÿÿÿ
+java:S1128	"+Remove this unused import 'java.util.Date'.(¸…¼ü
 9
 java:S1128
-"Remove this duplicated import.(¨¿áçüÿÿÿÿ
-k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•Æ²áıÿÿÿÿ
-k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•Æ²áıÿÿÿÿ
-k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•Æ²áıÿÿÿÿ
-k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•Æ²áıÿÿÿÿ
-k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•Æ²áıÿÿÿÿ
+"Remove this duplicated import.(±ı˜£şÿÿÿÿ
+9
+java:S1128"Remove this duplicated import.(¨¿áçüÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•Æ²áıÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•Æ²áıÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•Æ²áıÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•Æ²áıÿÿÿÿ
+k	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•Æ²áıÿÿÿÿ

@@ -3,7 +3,7 @@ w	java:S116"]Rename this field "NumberOfDoughballs" to match the regular expr
 t	java:S116	"ZRename this field "DoughballWeight" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Î®ª·úÿÿÿÿ
 h	java:S116
 "TRename this field "Hydration" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(çÚã{
-x	java:S116"WRename this field "ActiveRecipe" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÁÁ±Èıÿÿÿÿ8¶‘¼Àé/
+q	java:S116"WRename this field "ActiveRecipe" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÁÁ±Èıÿÿÿÿ
 f	java:S116"QRename this field "TPBLOK" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ğ¤€
 k	java:S116"QRename this field "TKBLOK" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±Éª€şÿÿÿÿ
 l	java:S116"RRename this field "TPKULKI" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ğíò‘üÿÿÿÿ
@@ -15,29 +15,30 @@ j	java:S116"PRename this field "Water" to match the regular expression '^[a-z
 d	java:S116"ORename this field "Salt" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œ£«
 m	java:S116"SRename this field "OliveOil" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰“¬Ûûÿÿÿÿ
 p	java:S116"VRename this field "Description" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(º¼Â­ùÿÿÿÿ
-U	java:S107"AConstructor has 8 parameters, which is greater than 7 authorized.(ÔòñN
-e	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÔòñN
-e	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÔòñN
-e	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÔòñN
-e	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÔòñN
-e	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÔòñN
-e	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÔòñN
-e	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÔòñN
-e	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÔòñN
-f	java:S117,"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( Õ÷Õ
-k	java:S117H"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÎÁìöıÿÿÿÿ
-k	java:S117P"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İÅëçúÿÿÿÿ
-k	java:S117X"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™‘Êüÿÿÿÿ
-f	java:S117`"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(É¨ÏÀ
-f	java:S117h"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰´ó
-f	java:S117p"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†ŒÌ¯
-f	java:S117w"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…ÚùŞ
-f	java:S117~"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—ØŞ
-l	java:S117†"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ã– úÿÿÿÿ
-l	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒåÓìúÿÿÿÿ
-l	java:S117–"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢‘ÈÇÿÿÿÿÿ
-l	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·ÂÛÁúÿÿÿÿ
+l	java:S116"RRename this field "EndDate" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªşäÉüÿÿÿÿ
+U	java:S107"AConstructor has 8 parameters, which is greater than 7 authorized.(ÔòñN
+e	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÔòñN
+e	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÔòñN
+e	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÔòñN
+e	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÔòñN
+e	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÔòñN
+e	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÔòñN
+e	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÔòñN
+e	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÔòñN
+f	java:S117."QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( Õ÷Õ
+k	java:S117K"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÎÁìöıÿÿÿÿ
+k	java:S117S"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İÅëçúÿÿÿÿ
+k	java:S117["QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™‘Êüÿÿÿÿ
+f	java:S117c"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(É¨ÏÀ
+f	java:S117k"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰´ó
+f	java:S117s"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†ŒÌ¯
+f	java:S117z"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…ÚùŞ
+g	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—ØŞ
+l	java:S117‰"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ã– úÿÿÿÿ
+l	java:S117‘"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒåÓìúÿÿÿÿ
+l	java:S117™"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢‘ÈÇÿÿÿÿÿ
+l	java:S117¡"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·ÂÛÁúÿÿÿÿ
 V
-java:S2184,"@Cast one of the operands of this integer division to a "double".( Õ÷Õ
+java:S2184."@Cast one of the operands of this integer division to a "double".( Õ÷Õ
 [
-java:S2184."@Cast one of the operands of this integer division to a "double".(íüéùÿÿÿÿ
+java:S21840"@Cast one of the operands of this integer division to a "double".(íüéùÿÿÿÿ

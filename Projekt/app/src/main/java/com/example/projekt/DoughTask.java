@@ -5,6 +5,7 @@ import android.renderscript.ScriptIntrinsicYuvToRGB;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
+import java.util.Comparator;
 import java.util.Date;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
@@ -29,7 +30,7 @@ public class DoughTask {
         this.Description = Description;
         this.TaskTime = TaskTime;
         this.DoughRecipeId = DoughRecipeId;
-        this.Active = true;
+        this.Active = false;
         this.LastTask = LastTask;
         this.taskNumer = taskNumer;
     }
@@ -105,4 +106,7 @@ public class DoughTask {
     public int getTaskNumer() {
         return taskNumer;
     }
+
+
+
 }
