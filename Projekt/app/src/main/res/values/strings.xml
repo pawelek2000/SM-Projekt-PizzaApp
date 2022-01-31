@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Projekt</string>
+    <string name="app_name">Ciasto do pizza</string>
 
     <string name="number_of_doughballs">Ilość kulek</string>
     <string name="doughball_weight">Waga kulki</string>
@@ -26,4 +26,10 @@
     <string name="backButton">Cofnij</string>
     <string name="play_button">Play</string>
 
+    <string name="dough_kneading_description">Odstaw ciasto w chłodne miejsce, o godzinie która widnieja u góry złóź je.</string>
+    <string name="fermentation_RT">Pozostaw ciasto w temperaturze pokojowej do godziny która widnieje u góry.</string>
+    <string name="fermentation_CT">Pozostaw ciasto w temperaturze kontrolowaniej do godziny która widnieje u góry.</string>
+    <string name="dough_parameters">Parametry ciasta</string>
+    <string name="required_values"> Wartości obowiązkowe</string>
+    <string name="optional_values">Wartości dodatkowe</string>
 </resources>

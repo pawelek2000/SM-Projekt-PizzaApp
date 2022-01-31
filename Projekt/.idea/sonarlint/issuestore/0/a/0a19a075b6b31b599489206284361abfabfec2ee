@@ -1,0 +1,12 @@
+
+w	java:S116"]Rename this field "TPBLOKNumberPicker" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ο™δύÿÿÿÿ
+w	java:S116"]Rename this field "TKBLOKNumberPicker" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ψ›Α΄ωÿÿÿÿ
+s	java:S116 "^Rename this field "TPKULKINumberPicker" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­΄Βϋ
+r	java:S116""^Rename this field "TKKULKINumberPicker" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©›ψl
+y	java:S116#"_Rename this field "TPKULKI2NumberPicker" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Έ²Μ΄ψÿÿÿÿ
+P
+java:S1854*";Remove this useless assignment to local variable "starter".(¦·\
+A
+java:S1481*",Remove this unused "starter" local variable.(¦·\
+C
+java:S1604Y"(Make this anonymous inner class a lambda(Κόϋÿÿÿÿ

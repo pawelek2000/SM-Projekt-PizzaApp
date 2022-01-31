@@ -1,0 +1,42 @@
+
+w	java:S116"]Rename this field "NumberOfDoughballs" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›şúöøÿÿÿÿ
+t	java:S116	"ZRename this field "DoughballWeight" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Î®ª·úÿÿÿÿ
+h	java:S116
+"TRename this field "Hydration" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(çÚã{
+q	java:S116"WRename this field "ActiveRecipe" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÁÁ±Èıÿÿÿÿ
+f	java:S116"QRename this field "TPBLOK" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ğ¤€
+k	java:S116"QRename this field "TKBLOK" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(±Éª€şÿÿÿÿ
+l	java:S116"RRename this field "TPKULKI" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ğíò‘üÿÿÿÿ
+g	java:S116"RRename this field "TKKULKI" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Òî
+h	java:S116"SRename this field "TPKULKI2" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÓÓÿû
+e	java:S116"PRename this field "Yeast" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Óµ£¢
+e	java:S116"PRename this field "Flour" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µ¦ùë
+j	java:S116"PRename this field "Water" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿ¬“Ğûÿÿÿÿ
+d	java:S116"ORename this field "Salt" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œ£«
+m	java:S116"SRename this field "OliveOil" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰“¬Ûûÿÿÿÿ
+p	java:S116"VRename this field "Description" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(º¼Â­ùÿÿÿÿ
+l	java:S116"RRename this field "EndDate" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ªşäÉüÿÿÿÿ
+U	java:S107!"AConstructor has 8 parameters, which is greater than 7 authorized.(ÔòñN
+e	java:S117!"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÔòñN
+e	java:S117!"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÔòñN
+e	java:S117!"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÔòñN
+e	java:S117!"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÔòñN
+e	java:S117!"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÔòñN
+e	java:S117!"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÔòñN
+e	java:S117!"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÔòñN
+e	java:S117!"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÔòñN
+f	java:S1170"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½®Ìö
+k	java:S117M"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÎÁìöıÿÿÿÿ
+k	java:S117U"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İÅëçúÿÿÿÿ
+k	java:S117]"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™‘Êüÿÿÿÿ
+f	java:S117e"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(É¨ÏÀ
+f	java:S117m"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‰´ó
+f	java:S117u"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†ŒÌ¯
+f	java:S117|"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…ÚùŞ
+g	java:S117ƒ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—ØŞ
+l	java:S117‹"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ã– úÿÿÿÿ
+l	java:S117“"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒåÓìúÿÿÿÿ
+l	java:S117›"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢‘ÈÇÿÿÿÿÿ
+l	java:S117£"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·ÂÛÁúÿÿÿÿ
+V
+java:S21840"@Cast one of the operands of this integer division to a "double".(½®Ìö

@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
     private static final String CURRENT_VIEW ="CURRENT_VIEW_ID";
     public static final int NEW_DOUGH_RECIPE_ACTIVITY_REQUEST_CODE = 0;
     public static final int YOUTUBE_REQUEST_CODE = 1;
+    public static final int DOUGH_TASK_DETAILS_REQUEST_CODE = 2;
     private int currentViewID = 0;
 
     private RecyclerView currentView;
@@ -164,7 +165,7 @@ public class MainActivity extends AppCompatActivity {
                 DoughRecipe doughRecipe = new DoughRecipe
                         (
                                 data.getIntExtra(EditDoughRecipeActivity.EXTRA_EDIT_DOUGH_RECIPE_NUMBER_OF_DOUGHBALLS,13),
-                                data.getIntExtra(EditDoughRecipeActivity.EXTRA_EDIT_DOUGH_RECIPE_NUMBER_OF_DOUGHBALLS,13),
+                                data.getIntExtra(EditDoughRecipeActivity.EXTRA_EDIT_DOUGH_RECIPE_DOUGHBALL_WEIGHT,13),
                                 data.getIntExtra(EditDoughRecipeActivity.EXTRA_EDIT_DOUGH_RECIPE_HYDRATION,13),
 
                                 data.getIntExtra(EditDoughRecipeActivity.EXTRA_EDIT_TPBLOK,13),
@@ -181,8 +182,8 @@ public class MainActivity extends AppCompatActivity {
                 DoughTask doughTask1 = new DoughTask
                         (
                                 getResources().getString(R.string.mixing_ingredients),
-                                getResources().getString(R.string.flour) + doughRecipe.getFlour() + " " + getResources().getString(R.string.water) + doughRecipe.getWater() + " "
-                                        + getResources().getString(R.string.yeast) + doughRecipe.getYeast() + " " + getResources().getString(R.string.salt) + doughRecipe.getSalt() + " "
+                                getResources().getString(R.string.flour) + doughRecipe.getFlour() + "\n" + getResources().getString(R.string.water) + doughRecipe.getWater() + "\n"
+                                        + getResources().getString(R.string.yeast) + doughRecipe.getYeast() + "\n" + getResources().getString(R.string.salt) + doughRecipe.getSalt() + "\n"
                                         + getResources().getString(R.string.oil)+ doughRecipe.getOliveOil(),
                                 0,
                                 doughRecipe2.getId(),
@@ -197,7 +198,7 @@ public class MainActivity extends AppCompatActivity {
                 for(int i=0;i<3;i++) {
                     DoughTask doughTask2 = new DoughTask(
                             getResources().getString(R.string.dough_kneading),
-                            " ",
+                            getResources().getString(R.string.dough_kneading_description),
                             10,
                             doughRecipe2.getId(),
                             false,
@@ -209,7 +210,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 DoughTask doughTask2 = new DoughTask(
                         getResources().getString(R.string.block_RT_fermentation),
-                        " ",
+                        getResources().getString(R.string.fermentation_RT),
                         doughRecipe2.getTPBLOK()*60,
                         doughRecipe2.getId(),
                         false,
@@ -221,7 +222,7 @@ public class MainActivity extends AppCompatActivity {
 
                 DoughTask doughTask3 = new DoughTask(
                         getResources().getString(R.string.block_CT_fermentation),
-                        " ",
+                        getResources().getString(R.string.fermentation_CT),
                         doughRecipe.getTKBLOK()*60,
                         doughRecipe2.getId(),
                         false,
@@ -233,7 +234,7 @@ public class MainActivity extends AppCompatActivity {
 
                 DoughTask doughTask4 = new DoughTask(
                         getResources().getString(R.string.ball_RT_fermentation),
-                        " ",
+                        getResources().getString(R.string.fermentation_RT),
                         doughRecipe.getTPKULKI()*60,
                         doughRecipe2.getId(),
                         false,
@@ -246,7 +247,7 @@ public class MainActivity extends AppCompatActivity {
                 {
                     DoughTask doughTask5 = new DoughTask(
                             getResources().getString(R.string.ball_CT_fermentation),
-                            " ",
+                            getResources().getString(R.string.fermentation_CT),
                             doughRecipe.getTKKULKI()*60,
                             doughRecipe2.getId(),
                             false,
@@ -258,7 +259,7 @@ public class MainActivity extends AppCompatActivity {
 
                     DoughTask doughTask6 = new DoughTask(
                             getResources().getString(R.string.ball_RT_fermentation2),
-                            " ",
+                            getResources().getString(R.string.fermentation_RT),
                             doughRecipe.getTPKULKI2()*60,
                             doughRecipe2.getId(),
                             false,
@@ -318,7 +319,7 @@ public class MainActivity extends AppCompatActivity {
         public void bind(DoughRecipe doughRecipe)
         {
             this.doughRecipe = doughRecipe;
-            titleTextView.setText(""+doughRecipe.getHydration());
+            titleTextView.setText(getResources().getString(R.string.hydration)+" "+doughRecipe.getHydration());
             endTimeTextView.setText(""+doughRecipe.getEndDate());
         }
 
@@ -383,6 +384,11 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View v)
         {
+            Intent intent = new Intent(MainActivity.this, TaskDetailsActivity.class);
+            intent.putExtra(TaskDetailsActivity.EXTRA_DETAILS_TASK_TITLE,doughTask.getTitle());
+            intent.putExtra(TaskDetailsActivity.EXTRA_DETAILS_TASK_DATE,""+doughTask.getTaskEndDate());
+            intent.putExtra(TaskDetailsActivity.EXTRA_DETAILS_TASK_DESCRIPTION,doughTask.getDescription());
+            startActivityForResult(intent, DOUGH_TASK_DETAILS_REQUEST_CODE);
         }
 
         @Override

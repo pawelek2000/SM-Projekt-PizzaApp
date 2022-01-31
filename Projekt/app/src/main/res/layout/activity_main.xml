@@ -26,21 +26,24 @@
                 android:layout_width="80dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="20dp"
-                android:backgroundTint="@color/purple_700"/>
+                android:backgroundTint="@color/purple_700"
+                app:icon="@drawable/ic_pizza_slice" />
 
             <Button
                 android:id="@+id/history_view_button"
                 android:layout_width="80dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="20dp"
-                android:backgroundTint="@color/design_default_color_error"/>
+                android:backgroundTint="@color/design_default_color_error"
+                app:icon="@drawable/ic_history" />
 
             <Button
                 android:id="@+id/tutorials_view_button"
                 android:layout_width="80dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="20dp"
-                android:backgroundTint="@color/purple_200"/>
+                android:backgroundTint="@color/purple_200"
+                app:icon="@drawable/ic_tutorials" />
 
         </LinearLayout>
 
@@ -64,6 +67,7 @@
         android:layout_height="wrap_content"
 
         android:layout_margin="16dp"
-        android:layout_gravity="bottom|end"/>
+        android:layout_gravity="bottom|end"
+        app:srcCompat="@drawable/ic_add" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

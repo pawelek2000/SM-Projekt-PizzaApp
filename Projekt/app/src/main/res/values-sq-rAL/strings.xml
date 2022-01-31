@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Brumë pica</string>
+    <string name="number_of_doughballs">Numri i topave</string>
+    <string name="doughball_weight">Pesha e topit</string>
+    <string name="hydration">Hidratimi</string>
+    <string name="add_dough_button">Shtoni</string>
+    <string name="add_recipe_failure">Koha shtesë e fermentimit duhet të jetë e përshtatshme ose e vendosur në 0.</string>
+    <string name="mixing_ingredients">Kombinoni përbërësit</string>
+    <string name="dough_kneading">Palosja e brumit</string>
+    <string name="flour">Miell:</string>
+    <string name="water">Uji:</string>
+    <string name="salt">Kripë:</string>
+    <string name="yeast">Maja:</string>
+    <string name="oil">Vaj:</string>
+    <string name="block_RT_fermentation">Fermentimi i TP Bllokut</string>
+    <string name="block_CT_fermentation">Fermentimi TK Blok</string>
+    <string name="ball_RT_fermentation">Fermentimi i TP Kulka</string>
+    <string name="ball_CT_fermentation">TK Kulka fermentimi</string>
+    <string name="ball_RT_fermentation2">TP2 Fermentimi i topit</string>
+    <string name="endTask">Përfundo</string>
+    <string name="backButton">Zhbër</string>
+    <string name="play_button">Luaj</string>
+    <string name="dough_kneading_description">Vendoseni brumin në një vend të freskët, paloseni në kohën e sipërme.</string>
+    <string name="fermentation_RT">Lëreni brumin në temperaturën e dhomës deri në orën e treguar sipër.</string>
+    <string name="fermentation_CT">Lëreni brumin në temperaturë të kontrolluar deri në orën e treguar sipër.</string>
+    <string name="dough_parameters">Parametrat e brumit</string>
+    <string name="required_values">Vlerat e detyrueshme</string>
+    <string name="optional_values">Vlerat shtesë</string>
+</resources>

@@ -33,6 +33,7 @@ public class DoughTask {
         this.Active = false;
         this.LastTask = LastTask;
         this.taskNumer = taskNumer;
+        this.TaskEndDate ="";
     }
 
     public void setId(int id) {

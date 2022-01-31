@@ -12,7 +12,9 @@
         <activity
             android:name=".EditDoughRecipeActivity"
             android:exported="true"/>
-
+        <activity
+            android:name=".TaskDetailsActivity"
+            android:exported="true"/>
         <activity
             android:name=".YouTubeTutorialsActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"

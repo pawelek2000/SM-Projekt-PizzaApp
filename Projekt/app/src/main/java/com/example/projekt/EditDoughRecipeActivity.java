@@ -60,7 +60,7 @@ public class EditDoughRecipeActivity extends AppCompatActivity{
         doughballWeightNumberPicker.setMaxValue(320);
         doughballWeightNumberPicker.setValue(265);
 
-        hydrationNumberPicker.setMaxValue(55);
+        hydrationNumberPicker.setMinValue(55);
         hydrationNumberPicker.setMaxValue(75);
         hydrationNumberPicker.setValue(60);
 

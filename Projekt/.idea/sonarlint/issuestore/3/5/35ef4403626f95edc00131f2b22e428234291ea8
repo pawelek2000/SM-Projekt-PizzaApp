@@ -1,0 +1,10 @@
+
+r	java:S116"XRename this field "TitleTextView" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©–œÿûÿÿÿÿ
+k	java:S116"WRename this field "DateTextView" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜ÎU
+x	java:S116"^Rename this field "DescriptionTextView" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(êñ¨ûÿÿÿÿ
+p
+java:S1450"[Remove the "DateTextView" field and declare it as a local variable in the relevant methods.(˜ÎU
+„
+java:S1450"bRemove the "DescriptionTextView" field and declare it as a local variable in the relevant methods.(êñ¨ûÿÿÿÿ8ÊÙÑëê/
+w
+java:S1450"\Remove the "TitleTextView" field and declare it as a local variable in the relevant methods.(©–œÿûÿÿÿÿ

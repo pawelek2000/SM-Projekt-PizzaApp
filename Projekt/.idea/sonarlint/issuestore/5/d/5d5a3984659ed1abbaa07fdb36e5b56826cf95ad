@@ -1,0 +1,12 @@
+
+W
+java:S1854";Remove this useless assignment to local variable "starter".(¦·\8éûøçê/
+P
+java:S1161":Add the "@Override" annotation above this method signature(èÈó
+H
+java:S1481",Remove this unused "starter" local variable.(¦·\8êûøçê/
+–
+java:S1186%"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(‹Í‹>
+X	java:S125-"<This block of commented-out lines of code should be removed.(·Âœ8–©èê/
+C
+java:S1604)"(Make this anonymous inner class a lambda(òéœŸøÿÿÿÿ

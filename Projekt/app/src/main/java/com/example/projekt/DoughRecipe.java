@@ -28,6 +28,8 @@ public class DoughRecipe {
     @PrimaryKey(autoGenerate = true)
     private int id;
 
+
+
     public DoughRecipe(int NumberOfDoughballs, int DoughballWeight, int Hydration, int TPBLOK, int TKBLOK,int TPKULKI,int TKKULKI,int TPKULKI2)
     {
         this.NumberOfDoughballs = NumberOfDoughballs;
@@ -43,12 +45,12 @@ public class DoughRecipe {
         this.TPKULKI2 = TPKULKI2;
         this.EndDate = "";
 
-        double OneDoughballFlourAmount = 0.966 * DoughballWeight * 10 /(10+Hydration/10);
-        this.Flour = OneDoughballFlourAmount * NumberOfDoughballs;
-        this.Water = OneDoughballFlourAmount * (Hydration/100) * NumberOfDoughballs;
-        this.Yeast = 0.0015 * OneDoughballFlourAmount * NumberOfDoughballs;
-        this.Salt = 0.0312 * OneDoughballFlourAmount * NumberOfDoughballs;
-        this.OliveOil = 0.025 * OneDoughballFlourAmount * NumberOfDoughballs;
+        double OneDoughballFlourAmount = (0.966 * DoughballWeight * 10) /(10+(Hydration/10));
+        this.Flour = round(OneDoughballFlourAmount * NumberOfDoughballs,0);
+        this.Water = round(OneDoughballFlourAmount * NumberOfDoughballs * Hydration /100,0);
+        this.Yeast = round(0.0015 * OneDoughballFlourAmount * NumberOfDoughballs,2);
+        this.Salt = round(0.0312 * OneDoughballFlourAmount * NumberOfDoughballs,0);
+        this.OliveOil = round(0.025 * OneDoughballFlourAmount * NumberOfDoughballs,0);
 
     }
 
@@ -182,5 +184,14 @@ public class DoughRecipe {
 
     public void setEndDate(String endDate) {
         EndDate = endDate;
+    }
+
+    public static double round(double value, int places) {
+        if (places < 0) throw new IllegalArgumentException();
+
+        long factor = (long) Math.pow(10, places);
+        value = value * factor;
+        long tmp = Math.round(value);
+        return (double) tmp / factor;
     }
 }

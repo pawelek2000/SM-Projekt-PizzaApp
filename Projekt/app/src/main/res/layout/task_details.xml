@@ -6,25 +6,28 @@
     android:gravity="center_horizontal">
 
     <TextView
-        android:id="@+id/title"
+        android:id="@+id/title_details"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1"/>
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:textSize="35dp"/>
     <TextView
-        android:id="@+id/date"
+        android:id="@+id/date_details"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1"/>
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:textSize="25dp"/>
     <TextView
-        android:id="@+id/description"
+        android:id="@+id/description_details"
         android:layout_width="match_parent"
         android:layout_height="1200dp"
-        android:layout_weight="1"/>
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:textSize="25dp"/>
 
-    <Button
-        android:layout_width="142dp"
-        android:layout_height="50dp"
-        android:text="@string/backButton"/>
+
 
 
 </LinearLayout>

@@ -13,7 +13,23 @@ n
 >app/src/main/java/com/example/projekt/DoughTaskRepository.java,b\b\bb1bf399497578ba9fd559a539d56d76d6c29673
 m
 =app/src/main/java/com/example/projekt/DoughTaskViewModel.java,e\e\ee5581602c319bad554ff43c44a6e07cc3bb003f
+i
+9app/src/main/java/com/example/projekt/DoughRecipeDao.java,2\e\2e437813215011cdc89928ea804e2852633b4032
+h
+8app/src/main/java/com/example/projekt/YouTubeConfig.java,5\2\52bbbc5ea98c64092191ec24021232dea1e276de
+s
+Capp/src/main/java/com/example/projekt/YouTubeTutorialsActivity.java,5\d\5d5a3984659ed1abbaa07fdb36e5b56826cf95ad
+r
+Bapp/src/main/java/com/example/projekt/EditDoughRecipeActivity.java,0\a\0a19a075b6b31b599489206284361abfabfec2ee
+f
+6app/src/main/java/com/example/projekt/DoughRecipe.java,0\7\073e658369e20d320627dbff00c49bcc645e77dd
+n
+>app/src/main/java/com/example/projekt/TaskDetailsActivity.java,3\5\35ef4403626f95edc00131f2b22e428234291ea8
+P
+ app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
 g
 7app/src/main/java/com/example/projekt/DoughTaskDao.java,0\d\0d623b6accff9417af53678161c450ba479f0c9b
 d
 4app/src/main/java/com/example/projekt/DoughTask.java,4\b\4bbec3614d483ea3ea46f82b1e055bf4557ec2a9
+g
+7app/src/main/java/com/example/projekt/MainActivity.java,0\8\08481bd4dc2a55163d4591deb0e36f98b236338b
